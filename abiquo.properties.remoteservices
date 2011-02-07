@@ -1,0 +1,16 @@
+[remote-services]
+abiquo.appliancemanager.localRepositoryPath = /opt/vm_repository/
+abiquo.appliancemanager.repositoryLocation = 127.0.0.1:/opt/vm_repository/
+abiquo.virtualfactory.hyperv.repositoryLocation = //127.0.0.1/vm_repository/
+abiquo.virtualfactory.xenserver.repositoryLocation = 127.0.0.1:/opt/vm_repository/
+abiquo.virtualfactory.vmware.repositoryLocation = 127.0.0.1:/opt/vm_repository/
+abiquo.virtualfactory.storagelink.address = https://127.0.0.1:21605
+abiquo.virtualfactory.storagelink.user = admin
+abiquo.virtualfactory.storagelink.password = storagelink
+abiquo.redis.host = 127.0.0.1
+abiquo.redis.port = 6379
+abiquo.rabbitmq.host = 127.0.0.1
+abiquo.rabbitmq.port = 5672
+abiquo.rabbitmq.username = guest
+abiquo.rabbitmq.password = guest
+
