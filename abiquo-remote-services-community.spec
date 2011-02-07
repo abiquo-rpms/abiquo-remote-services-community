@@ -2,7 +2,7 @@
 
 Name:     abiquo-remote-services-community
 Version:  1.7
-Release:  2%{?dist}%{?buildstamp}
+Release:  3%{?dist}%{?buildstamp}
 Summary:  Abiquo Remote Services
 Group:    Development/System 
 License:  Multiple 
@@ -11,6 +11,7 @@ Source0:  README
 Source1:  abiquo.properties.remoteservices
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires: abiquo-vsm abiquo-am abiquo-virtualfactory-community libvirt-client dhcp redis nfs-utils abiquo-server-tools
+BuildArch: noarch
 
 %description
 Next Generation Cloud Management Solution
@@ -37,6 +38,9 @@ rm -rf $RPM_BUILD_ROOT
 %{abiquo_basedir}/config/examples/abiquo.properties.remoteservices
 
 %changelog
+* Mon Feb 07 2011 Sergio Rubio <srubio@abiquo.com> - 1.7-3
+- changed buildarch
+
 * Mon Feb 07 2011 Sergio Rubio <srubio@abiquo.com> - 1.7-2
 - remove post scripts
 
